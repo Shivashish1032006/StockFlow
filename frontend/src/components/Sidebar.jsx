@@ -1,8 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, ScanSearch, PackageSearch, BellRing, ChartNoAxesCombined, Boxes, ChevronLeft, Leaf, LogOut } from 'lucide-react'
+import { LayoutDashboard, ScanSearch, PackageSearch, BellRing, ChartNoAxesCombined, Boxes, ChevronLeft, Leaf, LogOut, Package, Truck, ShoppingCart, TrendingUp } from 'lucide-react'
 
 const links = [
   { to: '/', label: 'Overview', icon: LayoutDashboard },
+  { to: '/inventory', label: 'Inventory', icon: Package },
+  { to: '/suppliers', label: 'Suppliers', icon: Truck },
+  { to: '/orders', label: 'Orders', icon: ShoppingCart },
+  { to: '/forecasting', label: 'Sales forecasting', icon: TrendingUp },
   { to: '/anomalies', label: 'Stock anomalies', icon: ScanSearch, badge: '3' },
   { to: '/batches', label: 'Batch & expiry', icon: PackageSearch, badge: '2' },
   { to: '/notifications', label: 'Notifications', icon: BellRing, badge: '3' },

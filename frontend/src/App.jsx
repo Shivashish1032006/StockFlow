@@ -7,9 +7,13 @@ import StockAnomalies from './pages/StockAnomalies'
 import BatchExpiry from './pages/BatchExpiry'
 import Notifications from './pages/Notifications'
 import ProfitAnalytics from './pages/ProfitAnalytics'
+import Inventory from './pages/Inventory'
+import Suppliers from './pages/Suppliers'
+import Orders from './pages/Orders'
+import SalesForecasting from './pages/SalesForecasting'
 import AuthPage from './pages/AuthPage'
 
-const titles = { '/': 'Overview', '/anomalies': 'Stock anomalies', '/batches': 'Batch & expiry', '/notifications': 'Notifications', '/analytics': 'Profit & loss' }
+const titles = { '/': 'Overview', '/inventory': 'Inventory', '/suppliers': 'Suppliers', '/orders': 'Orders', '/forecasting': 'Sales forecasting', '/anomalies': 'Stock anomalies', '/batches': 'Batch & expiry', '/notifications': 'Notifications', '/analytics': 'Profit & loss' }
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -36,6 +40,10 @@ export default function App() {
           <div className="mobile-page-label">{titles[location.pathname] || 'StockFlow'}</div>
           <Routes>
             <Route path="/" element={<Dashboard/>}/>
+            <Route path="/inventory" element={<Inventory/>}/>
+            <Route path="/suppliers" element={<Suppliers/>}/>
+            <Route path="/orders" element={<Orders/>}/>
+            <Route path="/forecasting" element={<SalesForecasting/>}/>
             <Route path="/anomalies" element={<StockAnomalies/>}/>
             <Route path="/batches" element={<BatchExpiry/>}/>
             <Route path="/notifications" element={<Notifications/>}/>
