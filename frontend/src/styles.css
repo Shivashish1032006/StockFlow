@@ -53,3 +53,19 @@
 .logout-button{margin-left:auto;border:0;background:#ffffff14;color:#c5d4c5;width:29px;height:29px;border-radius:7px;display:grid;place-items:center}
 .logout-button:hover{background:#ffffff27;color:#fff}
 @media(max-width:800px){.auth-page{grid-template-columns:1fr}.auth-visual{display:none}.auth-form-side{min-height:100vh;padding:30px 24px 70px}.auth-mobile-brand{display:flex;margin:0 auto 55px;color:#234c3b}.auth-copyright{bottom:18px}.auth-form-wrap h2{font-size:26px}}
+
+/* Added StockFlow module styles */
+.modal-backdrop{position:fixed;inset:0;background:rgba(20,35,26,.42);display:grid;place-items:center;padding:20px;z-index:100}
+.modal-card{background:#fff;border-radius:14px;border:1px solid #e7ece5;box-shadow:0 20px 60px #15251b35;width:min(680px,100%);max-height:90vh;overflow:auto;padding:22px}
+.modal-head{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px}
+.modal-head h2{font:700 19px Manrope,sans-serif;color:#293a30;margin:0}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.form-grid label{display:grid;gap:6px;font-size:10px;font-weight:700;color:#647267}
+.form-grid input,.form-grid select{height:38px;border:1px solid #e3e9e1;border-radius:7px;padding:0 10px;color:#344238;background:#fff;outline:none;font-size:11px;min-width:0}
+.form-grid input:focus,.form-grid select:focus{border-color:#86a68d;box-shadow:0 0 0 3px #e9f1e8}
+.modal-actions{display:flex;justify-content:flex-end;gap:8px;margin-top:22px}
+.detail-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:12px;padding:10px 0;color:#7c897e;font-size:11px}
+.detail-grid strong{color:#344238;font-weight:600}
+.table-scroll td .filter-select{margin-left:4px;max-width:120px}
+@media(max-width:900px){.form-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.form-grid{grid-template-columns:1fr}.modal-card{padding:17px}.page-content{padding:22px 15px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.table-toolbar{align-items:flex-start;flex-direction:column}.toolbar-actions{width:100%;flex-wrap:wrap}.table-search{flex:1}.table-search input{width:100%}}
